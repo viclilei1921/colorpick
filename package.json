@@ -1,0 +1,49 @@
+{
+  "name": "@viclilei/colorpick",
+  "version": "0.0.1",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/colorpick.umd.cjs",
+  "module": "dist/colorpick.js",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/src/index.d.ts",
+        "default": "./dist/colorpick.js"
+      },
+      "require": {
+        "types": "./dist/src/index.d.ts",
+        "default": "./dist/colorpick.umd.cjs"
+      }
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "types": "./dist/src/index.d.ts",
+  "scripts": {
+    "dev": "vite",
+    "serve": "vite --host",
+    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "types": "vue-tsc --noEmit",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.44.6",
+    "@types/node": "^20.8.9",
+    "@typescript-eslint/eslint-plugin": "^6.9.1",
+    "@typescript-eslint/parser": "^6.9.1",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "eslint": "^8.52.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-vue": "^9.18.1",
+    "less": "^4.2.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-eslint": "^1.8.1",
+    "vue-tsc": "^1.8.5"
+  }
+}
